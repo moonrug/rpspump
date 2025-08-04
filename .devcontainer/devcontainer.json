@@ -1,0 +1,18 @@
+{
+  "name": "Solana Anchor Dev",
+  "image": "mcr.microsoft.com/devcontainers/rust:latest",
+  "postCreateCommand": "bash -c 'curl -sSfL https://release.solana.com/v1.14.19/install | sh && cargo install --git https://github.com/coral-xyz/anchor anchor-cli --locked'",
+  "remoteUser": "vscode",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer"
+      ]
+    }
+  }
+}

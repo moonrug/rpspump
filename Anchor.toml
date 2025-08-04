@@ -1,0 +1,12 @@
+[programs.devnet]
+pfc = "TON_PROGRAM_ID"  # À remplacer après le déploiement
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"  # Chemin vers ta clé wallet locale
+
+[scripts]
+test = "cargo test"
